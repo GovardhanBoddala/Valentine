@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Govardhan</title>
+    <style>
+
+        /* VIDEO BACKGROUND */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            background-color: black;
+        }
+
+        body {
+            margin: 0;
+            padding: 60px 20px;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: transparent;
+        }
+
+        .main-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* PROFILE CIRCLE */
+        .circle {
+            width: 180px;
+            height: 180px;
+            border: 3px solid #007bff;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            overflow: hidden; /* Important */
+            box-shadow: 0 0 25px rgba(0, 123, 255, 0.4);
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Makes image fill circle without distortion */
+            display: block;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .section-card {
+            background-color: rgba(0,0,0,0.7);
+            border: 1px solid #222222;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            text-align: left;
+            backdrop-filter: blur(5px);
+        }
+
+        h3 {
+            color: #bc2892;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #bbbbbb;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            color: #ffffff;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .blue-heart {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 18px 45px;
+            border: 2px solid #007bff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            background: rgba(0,0,0,0.5);
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #888888;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="0_Hearts_Red_Hearts_3840x2160.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="main-box">
+
+        <div class="circle">
+            <img src="abhi.jpg" alt="Abhishek Sharma">
+        </div>
+
+        <h1><i>Abhishek Sharma</i></h1>
+
+        <div class="section-card">
+            <h3>About Myself</h3>
+            <p>26 Years Old</p><br>
+            <p>Amritsar, Punjab</p><br>
+            <p>Currently in Indian Cricket Team</p>
+        </div>
+
+        <div class="section-card">
+            <h3>Green Flags</h3>
+            <ul>
+                <li><span class="blue-heart">💙</span> Immense dedication & Hardworking</li>
+                <li><span class="blue-heart">💙</span> Spreading love & positivity</li>
+                <li><span class="blue-heart">💙</span> Passionate about cricket (especially smashing bowlers)</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h3>What Interests Me</h3>
+            <ul>
+                <li><span class="blue-heart">💙</span> Favorite Food: Butter Chicken 🍗</li>
+                <li><span class="blue-heart">💙</span> Favorite Artist: Arijit Singh 🎵</li>
+                <li><span class="blue-heart">💙</span> Favorite Travel Destination: Goa 🌊</li>
+                <li><span class="blue-heart">💙</span> Hobbies: Playing Cricket 🏏 & Gym 💪</li>
+            </ul>
+        </div>
+
+        <button class="btn">
+            Initiate Handshake 💙
+        </button>
+
+        <footer>
+            © 2026 | Designed with 💙
+        </footer>
+
+    </div>
+
+</body>
+</html>
