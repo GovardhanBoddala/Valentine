@@ -43,12 +43,19 @@
             box-shadow: 0 0 25px rgba(0, 123, 255, 0.4);
         }
 
-        .circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            display: block;
+        .pulse-heart {
+            font-size: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: heartbeat 1.5s ease-in-out infinite;
         }
+
+         @keyframes heartbeat {
+             0% { transform: scale(1); }
+             50% { transform: scale(1.1); }
+             100% { transform: scale(1); }
+          }
 
         h1 {
             font-size: 32px;
@@ -137,25 +144,25 @@
 
     <div class="main-box">
 
-        <div class="circle">
-            <img src="abhi.jpg" alt="Abhishek Sharma">
+        <div class="circle pulse-heart">
+         💙
         </div>
 
-        <h1><i>Abhishek Sharma</i></h1>
+        <h1><i>Boddala Govardhan</i></h1>
 
         <div class="section-card">
             <h3>About Myself</h3>
-            <p>26 Years Old</p><br>
-            <p>Amritsar, Punjab</p><br>
-            <p>Currently in Indian Cricket Team</p>
+            <p>18 Years Old</p><br>
+            <p>Vizianagaram,Andhra Pradesh</p><br>
+            <p>Currently studying in Indian Institute of Information Technology Ranchi,Jharkhand</p>
         </div>
 
         <div class="section-card">
             <h3>Green Flags</h3>
             <ul>
-                <li><span class="blue-heart">💙</span> Immense dedication & Hardworking</li>
-                <li><span class="blue-heart">💙</span> Spreading love & positivity</li>
-                <li><span class="blue-heart">💙</span> Passionate about cricket (especially smashing bowlers)</li>
+                <li><span class="blue-heart">💙</span> Good listener</li>
+                <li><span class="blue-heart">💙</span> Spreading positivity</li>
+                <li><span class="blue-heart">💙</span> Passionate about improving myself</li>
             </ul>
         </div>
 
@@ -163,9 +170,9 @@
             <h3>What Interests Me</h3>
             <ul>
                 <li><span class="blue-heart">💙</span> Favorite Food: Butter Chicken 🍗</li>
-                <li><span class="blue-heart">💙</span> Favorite Artist: Arijit Singh 🎵</li>
-                <li><span class="blue-heart">💙</span> Favorite Travel Destination: Goa 🌊</li>
-                <li><span class="blue-heart">💙</span> Hobbies: Playing Cricket 🏏 & Gym 💪</li>
+                <li><span class="blue-heart">💙</span> Favorite Artist: S. P. Balasubrahmanyam 🎵</li>
+                <li><span class="blue-heart">💙</span> Favorite Travel Destination: Manali 🗻</li>
+                <li><span class="blue-heart">💙</span> Hobbies: Reading Novels & Playing Chess</li>
             </ul>
         </div>
 
@@ -181,4 +188,5 @@
 
 </body>
 </html>
+
 
